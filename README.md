@@ -6,10 +6,10 @@ A collection of three DEFI contracts, namely Staking, Lending Pool, and Vault, w
 Create a pool contract that accepts deposit from lenders and borrow money to the borrowers
 
 - Lenders can lend any amount of money and earn some interest for it.
-- User or borrower can borrow some amount of tokens (limited) , and pay back with interest for some time period.
-- Interest is calculated according the interest rate and borrowing time peroid
+- User or borrower can borrow some amount of tokens (limited), and pay back with interest for some time period.
+- Interest is calculated according to the interest rate and borrowing time peroid
 - Lender can withdraw the amount later with extra interest earning
-- Other functions can be called to determine the balance at any point of time , and the rewards earned
+- Other functions can be called to determine the balance at any point of time, and the rewards earned
 
 ### Vault Contract
 
@@ -17,15 +17,15 @@ Sharing of Yield For the no. of shares owned
 
 - user can deposit their money
 - Some shares are minted according to the value deposited
-- Vault generate some yield by a puropose and the value of share increases
-- user can withdraw the amount by burning those share at any point of time .
+- Vault generates some yield by a purpose and the value of share increases
+- user can withdraw the amount by burning those shares at any point of time.
 
 ### Staking Contract
 
-Rewards user for staking their tokens in the contract
+Rewards users for staking their tokens into the contract
 
-- User can withdraw and deposit at an point of time
-- Tokens Earned can be withdrawed any time
+- User can withdraw and deposit at any point of time
+- Tokens Earned can be withdrawn any time
 - Rewards are calculated with reward rate and time period staked for
 - The balance and reward earned can be checked at any point of time
 
@@ -38,9 +38,8 @@ Rewards user for staking their tokens in the contract
 - By developing a collection of DEFI contracts, including a lending pool, a vault, and staking, the project aims to provide the foundation for a robust DEFI ecosystem on Sui. This not only benefits existing developers and users but also attracts new participants to the Sui network, increasing its adoption and expanding its use cases.
 
 ### Technoligies used
-- Move Languag
-- Sui Blockchain 
-.
+- Move Language
+- Sui Blockchain
 
 ## Setup
 
@@ -70,7 +69,7 @@ curl https://sh.rustup.rs -sSf | sh
 If you are using Github codespaces, it's recommended to use pre-built binaries rather than building them from source.
 
 To download pre-built binaries, you should run `download-sui-binaries.sh` in the terminal. 
-This scripts takes three parameters (in this particular order) - `version`, `environment` and `os`:
+This script takes three parameters (in this particular order) - `version`, `environment` and `os`:
 - sui version, for example `1.15.0`. You can lookup a more up-to-date version available here [SUI Github releases](https://github.com/MystenLabs/sui/releases).
 - `environment` - that's the environment that you are targeting, in our case it's `devnet`. Other available options are: `testnet` and `mainnet`.
 - `os` - name of the os. If you are using Github codespaces, put `ubuntu-x86_64`. Other available options are: `macos-arm64`, `macos-x86_64`, `ubuntu-x86_64`, `windows-x86_64` (not for WSL).
@@ -86,7 +85,7 @@ If you prefer to build the binaries from source, run this command in your termin
 cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devnet sui
 ```
 
-### Install dev tools (not required, might take a while when installin in codespaces)
+### Install dev tools (not required, might take a while when installing in codespaces)
 ```
 cargo install --git https://github.com/move-language/move move-analyzer --branch sui-move --features "address32"
 
@@ -113,7 +112,7 @@ https://chrome.google.com/webstore/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbob
 ```
 
 ### Configure connectivity to a local node
-Once the local node is running (using `sui-test-validator`), you should the url of a local node - `http://127.0.0.1:9000` (or similar).
+Once the local node is running (using `sui-test-validator`), you should use the url of a local node - `http://127.0.0.1:9000` (or similar).
 Also, another url in the output is the url of a local faucet - `http://127.0.0.1:9123`.
 
 Next, we need to configure a local node. To initiate the configuration process, run this command in the terminal:
@@ -179,7 +178,7 @@ Also, you can top up the balance via the wallet app. To do that, you need to imp
 ## Build and publish a smart contract
 
 ### Build package
-To build tha package, you should run this command:
+To build that package, you should run this command:
 ```
 sui move build
 ```
